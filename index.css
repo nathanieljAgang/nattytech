@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizibg: border-box;
+    font-family: sans-serif;
+    color: rgb(8, 8, 8);
+}
+.head{
+    margin-left:500px;
+    display: block;
+}
+body{
+    display: flex;
+    height: 100vh;
+    background: url(xdollars.jpg);
+    background-size: cover;
+}
+.img{
+    width: 10%;
+    border-radius: 50px;
+    border: 2px 2px 2px red;
+    height: 60px;
+margin-left: 10px;
+margin-top: 0px;
+margin-bottom: 0px;
+}
+.name{
+    width: 50%;
+    font-family: times new roman;
+    color: white;
+    font-weight: lighter;
+    font-size: 14px
+}
+.nath-details{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    max-width: 650px;
+    box-shadow: inset 2px 2px 2px blue;
+    border-radius: 10px;
+    background: white;
+    border: 2px solid red;
+    max-height: fit-content;
+    height: fit-content;
+}
+.our-service{
+    font-family: Arial;
+    font-weight: bold;
+font-size: large;
+color: solid  black;
+padding-left: 10px;
+padding-right: 10px;
+padding-top: 5px;
+padding-bottom: 5px;
+
+}
+.content{
+    display: block;
+}
+.pay{
+    margin-left: 5px;
+}
+.reg{
+    margin-right: 5px;
+}
+.w{
+    display: block;
+}
+.e{
+    display: block;
+}

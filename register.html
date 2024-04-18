@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>responsive registration form </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+<h1 class="form-title">registration form</h1>
+<form method="dialog" action="https://https://github.com/testgituhnath/nath/">
+    <div class="main-user-info">
+                <div class="user-input-box">
+                    <label for="username">fullname</label>
+                <input type="username" name="fullname" id="username" placeholder="fullname" required>
+            <div>
+    <div> 
+        <div class="user-input-box">
+            <label for="username">username</label>
+        <input type="text" name="username" id="username" placeholder="username" required>
+        </div>
+    <div> 
+        <div class="user-input-box">
+            <label for="email">email</label>
+        <input type="email" name="email" id="email" placeholder="email address" required>
+    <div>
+    <div> 
+        <div class="user-input-box">
+            <label for="contact">contact</label>
+        <input type="contact" name="contact" id="contact" placeholder="phone number" required>
+    <div>
+    <div> 
+        <div class="user-input-box">
+            <label for="password">password </label>
+        <input type="password" name="password" id="password" placeholder="enterpassword" required pattern="[a-z0-5]{8,}">
+    <div>
+        <div> 
+            <div class="user-input-box">
+                <label for="comfirm password">comfirm password </label>
+            <input type="password" name="comfirm password" id="comfirm password" placeholder="enter comfirm password" required pattern="[a-z0-5]{8,}">
+        <div>
+    <div class="gender-detail-box">
+        <span class="gender-title">gender</span>
+        <div class="gender-categories">
+            <input type="radio" name="gender" id="male">
+            <label for="male">male</label>
+                <input type="radio" name="gender" id="female">
+                <label for="female">female</label>
+                    <input type="radio" name="gender" id="other">
+                    <label for="other">other</label>
+        </div>
+        <div class="form-submit-btn">
+            <input type="submit" value="register">back to login
+        </div>
+        <script>
+            const form = document.getElementById('form');
+    const email = document.getElementById('email');
+    const username = document.getElementById('username');
+    const password = document.getElementById('password');
+    const password2 = document.getElementById('password2');
+    
+    form.addEventListener('submit',  e=> { 
+        e.preventDefault();
+        validateInput();
+    });
+    const setError =(Element,message) =>{
+        const inputControl = Element.parentelement;
+        const errorDisplay = inputControl.queryselector('.error');
+        errorDisplay.innertext = message;
+        inputControl.classlist.add('error');
+        inputControl.classlist.remove('success');
+    }
+    const setsuccess = Element => {
+        const inputControl = Element.parentelement;
+        const errorDisplay = inputControl.queryselector('.error');
+        errorDisplay = innertext = '';
+        inputControl.classlist.add('success');
+        inputControl.classlist.remove('error');
+    };
+    const validateInput = ()=>{
+        const usernamevalue =u sername.value.trim();
+        const emailvalue = email.value.trim();
+        const passwordvalue = password.value.trim();
+    };
+    if (usernamevalue === '') {
+        setError(username, 'required');
+    }else{
+        setsuccess(username);
+    }
+    if (emailvalue === '') {
+        setError(email, 'required');
+    }else if(!isvalidemail(emailvalue)) {
+        setError(email, 'provide a valid email address');
+    }else{
+        setsuccess(email);
+    }
+    
+    if (password === '') {
+        setError(password, 'password is required');
+    }else if(passwordvalue.length <8) {
+        setError(password, 'password word most be atleat 8 character.');
+    }else{
+        setsuccess(password);
+    }
+    if (password2 === '') {
+        setError(password2,'comfirm your password is required');
+    }else if(password2value!==passwordvalue) {
+        setError(password, "password2 doesnt not match");
+    }else{
+        setsuccess(password2);
+    }
+        </script>
+  <\body>
+  </html>
