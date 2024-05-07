@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>website</title>
+    <title>nattytech</title>
     <link rel="stylesheet" href="styl.css">
 </head>
 <body>
@@ -25,17 +25,23 @@
         <option value="2">Virtual Assistant Service</option>
         </li>
         <option value="3">web design</option></select> 
-        <li><a href="survey.html">surveyform</a>
+        <li>
+            <select>
+                <option value="" ><a></a>select</option>
+                    <option value="1" ><a href="./cat-photo-gallery.html" >cat gallery</a></option>
+                <option value="2" ><a href="./ferewheel.html" >ferewheel</a></option>
+                   <option value="3" ><a href="./image-cat.html" >cat gallery</a></option>
+                 <option value="4" ><a href="./piano.html" >piano</a></option>
+                <option value="5" ><a href="./skyline.html" >skyline</a></option>
+                   <option value="6" ><a href="./peguin.html" >cartoon</a></option>
+                    <option value="1" ><a href="./balance-sheet.html" >cat gallery</a></option>
+            </select>
+            Design</a>
         </li>
         <li><a href="portfolio.html">portfolio</li>
         
     </ul>
 </div>
-<div class="search">
-<input class="srch" type="search" name="" placeholder="search" value="search"></input>
-<a href="index.html"><button class="btn">search</button></a>
-</div>
-<div class="content">
     <h1><Br></Br> <span>web design</span> <br>&<br>develoment<br>course</h1>
 <p class="par">
     <br>welcome to my online class <br>where you will have a full understanding <br> of web development
@@ -43,7 +49,7 @@
 </div>
 <div><button class="cn"><a href="index.html"></a><br>join us</button>
 </div>
-<form  method="post" action="https://testgituhnath.github.io/nattytech/" >
+<form  method="post" action="https://testgituhnath.github.io/nattytech/survey-submit" >
     <div class="form">
         <h2>login here</h2>
         <input type="email" name="email" placeholder="enter email" required>
@@ -57,73 +63,15 @@
             login with
         </p>
         <div class="icons">
-            <a href="#"><ion-icon name="logo-facebook" >facebook</ion-icon></a>
-            <a href="#"><ion-icon name="logo-twitter" >youtube</ion-icon></a>
-            <a href="#"><ion-icon name="logo-instagram" >instagram<ion-icon><a>
-            <a href="#"><ion-icon name="logo-telegram" >telegram</ion-icon></a>
-            
+            <a href="https://ng.linkedin.com/in/nathaniel-john-agang-266349304" target="_blank" class="btn contact-details"><i class="fab fa-telegram"></i> linkedin</a>
+      <a id="profile-link" href="https://testgituhnath.github.io/nattytech/" target="_blank" class="btn contact-details"><i class="fab fa-github"></i> GitHub</a>
+      <a href="Nathaniel J Agang" target="_blank" class="btn contact-details"><i class="fab fa-linkedin"></i>telegram</a>
+      <a href="mailto:nathanielagang2023@gmail.com" class="btn contact-details"><i class="fas fa-at"></i> Send a mail</a>
+      <a href="tel:09126486819" class="btn contact-details"><i class="fas fa-mobile-alt"></i> Call me</a>  
         </div>
         </div>
         </div>
         </div>
 </form>
-    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js">
-        const form = document.getElementById('form');
-const email = document.getElementById('email');
-const username = document.getElementById('username');
-const password = document.getElementById('password');
-const password2 = document.getElementById('password2');
-
-form.addEventListener('submit',  e=> { 
-    e.preventDefault();
-    validateInput();
-});
-const setError =(Element,message) =>{
-    const inputControl = Element.parentelement;
-    const errorDisplay = inputControl.queryselector('.error');
-    errorDisplay.innertext = message;
-    inputControl.classlist.add('error');
-    inputControl.classlist.remove('success');
-}
-const setsuccess = Element => {
-    const inputControl = Element.parentelement;
-    const errorDisplay = inputControl.queryselector('.error');
-    errorDisplay = innertext = '';
-    inputControl.classlist.add('success');
-    inputControl.classlist.remove('error');
-};
-const validateInput = ()=>{
-    const usernamevalue =u sername.value.trim();
-    const emailvalue = email.value.trim();
-    const passwordvalue = password.value.trim();
-};
-if (usernamevalue === '') {
-    setError(username, 'required');
-}else{
-    setsuccess(username);
-}
-if (emailvalue === '') {
-    setError(email, 'required');
-}else if(!isvalidemail(emailvalue)) {
-    setError(email, 'provide a valid email address');
-}else{
-    setsuccess(email);
-}
-
-if (password === '') {
-    setError(password, 'password is required');
-}else if(passwordvalue.length <8) {
-    setError(password, 'password word most be atleat 8 character.');
-}else{
-    setsuccess(password);
-}
-if (password2 === '') {
-    setError(password2,'comfirm your password is required');
-}else if(password2value!==passwordvalue) {
-    setError(password, "password2 doesnt not match");
-}else{
-    setsuccess(password2);
-}
-    </script>
 </body>
 </html>
