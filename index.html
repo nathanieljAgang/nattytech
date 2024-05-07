@@ -6,7 +6,7 @@
     <title>website</title>
 </head>
     <style>
-       *{
+        *{
     margin: 0px;
     pad: 0px;
 }
@@ -70,7 +70,27 @@ ul li a{
 ul li a: hover{
     color: blue;
 }
-        .btn{
+.search{
+    width: 150px;
+    margin-left: 200px;
+    display: flex;
+}
+.srch{
+    font-family: times new roman;
+    width: 100px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid white;
+    margin-top: 13px;
+    color: white;
+    border-right: none;
+    font-size: 10px;
+    float: left;
+    padding: 10px;
+    border-top-left-radius: 5px;
+    border-top-left-radius: 5px;
+}
+.btn{
     width: 100px;
     height: 40px;
     background: green;
@@ -83,7 +103,13 @@ ul li a: hover{
     border-top-left-radius: 5px;
 cursor: pointer;
 }
-        .content{
+.btn:focus{
+    outline: none;
+}
+.search:focus{
+    outline: none;
+}
+.content{
     width: 1200px;
     height: auto;
     margin: auto;
@@ -160,7 +186,61 @@ padding: 8px;
     margin-top: 30px;
     font-family: sans-serif;
 }
-        img{
+.form input:focus{
+    outline: none;
+}
+::placeholder{
+    color: white;
+    font-family: arial;
+}
+.btnn{
+    width: 240px;
+    height: 40px;
+    background: coral;
+    border: none;
+    margin-top: 30px;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.btnn: hover{
+    background: white;
+}
+.btnn a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+.form.link{
+    font-family: arial;
+    font-size: 17px;
+    padding-top: 20px;
+    text-align: center;
+}
+.form.link a{
+    text-decoration: none;
+    color: coral;
+}
+liw{
+    color: white;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+.icons a{
+    text-decoration: none;
+    color: white;
+}
+.icons ion-icon{
+    color: crimson;
+    font-size: 30px;
+    padding-left: 14px;
+    padding-top: 5px;
+}
+.icons ion-icon:hover{
+    color: coral;
+}
+img{
     width: 30%;
     height: 50px;
 }
@@ -176,20 +256,6 @@ padding: 8px;
 #service{
     max-width: 70px;
     min-width: 55px;
-   }
-        .icons a{
-    text-decoration: none;
-    color: white;
-}
-.icons ion-icon{
-    color: crimson;
-    font-size: 30px;
-    padding-left: 14px;
-    padding-top: 5px;
-}
-.icons ion-icon:hover{
-    color: coral;
-}
 }
     </style>
 <body>
@@ -201,6 +267,11 @@ padding: 8px;
 </div>
 <div class="menu">
     <ul>
+    </div>
+    <div class="search">
+<input class="srch" type="search" name="" placeholder="search"></input>
+<a href="index.html"><button class="btn">search</button></a>
+</div>
         <li><a href="index.html">home</a>
         </li>
         <li><a href="#">about</a> </li>
