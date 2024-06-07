@@ -4,12 +4,54 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>my portfolio</title>
-  <link rel="stylesheet" href="portfolio.css">
-  <link rel="stylesheet" href="pengiun.css">
-  <link rel="stylesheet" href="magazine.css">
-  <link rel="stylesheet" href="survey.css">
-  <link rel="stylesheet" href="Technical.css">
 </head>
+<style>
+  *{
+    font-family: 'Times New Roman', Times, serif;
+    margin: opx;
+  }
+  
+  .nav-list{
+    justify-content: space-evenly;
+    list-style-type: none;
+    display: flex;
+    justify-items: center;
+    background-color: lightgreen;
+    
+  }
+  a{
+    text-decoration: none;
+    color: blue;
+  }
+  li{
+    font-size: arial;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  li :hover{
+    color: lightcyan;
+  }
+  li :active{
+    color: green;
+  }
+  @media only screen and (max-width: 720px) {
+  .nav,.nav-list {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .project-section {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .project-grid {
+    font-size: 6rem;
+  }
+  
+</style>
 <body>
   <!-- START NAV -->
 
@@ -44,368 +86,39 @@
     <h2 class="projects-section-header">These are some of my projects</h2>
 
     <div class="projects-grid">
-      <header>
-        <img id="logo" src="https://cdn.freecodecamp.org/platform/universal/fcc_primary.svg">
-        <h1>HTML/CSS Quiz</h1>
-        <nav>
-          <ul>
-            <li><a href="#student-info">INFO</a></li>
-            <li><a href="#html-questions">HTML</a></li>
-            <li><a href="#css-questions">CSS</a></li>
-          </ul>
-        </nav>
-      </header>
-      <main>
-        <form method="post" action="https://freecodecamp.org/practice-project/accessibility-quiz">
-          <section role="region" aria-labelledby="student-info">
-            <h2 id="student-info">Student Info</h2>
-            <div class="info">
-              <label for="student-name">Name:</label>
-              <input type="text" name="student-name" id="student-name" />
-            </div>
-            <div class="info">
-              <label for="student-email">Email:</label>
-              <input type="email" name="student-email" id="student-email" />
-            </div>
-            <div class="info">
-              <label for="birth-date">D.O.B.<span class="sr-only">(Date of Birth)</span></label>
-              <input type="date" name="birth-date" id="birth-date" />
-            </div>
-          </section>
-          <section role="region" aria-labelledby="html-questions">
-            <h2 id="html-questions">HTML</h2>
-            <div class="question-block">
-              <p>1</p>
-              <fieldset class="question" name="html-question-one">
-                <legend>
-                  The legend element represents a caption for the content of its
-                  parent fieldset element
-                </legend>
-                <ul class="answers-list">
-                  <li>
-                    <label for="q1-a1">
-                      <input type="radio" id="q1-a1" name="q1" value="true" />
-                      True
-                    </label>
-                  </li>
-                  <li>
-                    <label for="q1-a2">
-                      <input type="radio" id="q1-a2" name="q1" value="false" />
-                      False
-                    </label>
-                  </li>
-                </ul>
-              </fieldset>
-            </div>
-            <div class="question-block">
-              <p>2</p>
-              <fieldset class="question" name="html-question-two">
-                <legend>
-                  A label element nesting an input element is required to have a
-                  for attribute with the same value as the input's id
-                </legend>
-                <ul class="answers-list">
-                  <li>
-                    <label for="q2-a1">
-                      <input type="radio" id="q2-a1" name="q2" value="true" />
-                      True
-                    </label>
-                  </li>
-                  <li>
-                    <label for="q2-a2">
-                      <input type="radio" id="q2-a2" name="q2" value="false" />
-                      False
-                    </label>
-                  </li>
-                </ul>
-              </fieldset>
-            </div>
-          </section>
-          <section role="region" aria-labelledby="css-questions">
-            <h2 id="css-questions">CSS</h2>
-            <div class="formrow">
-              <div class="question-block">
-                <label for="selector">Can the CSS margin property accept negative values?</label>
-              </div>
-              <div class="answer">
-                <select name="selector" id="selector" required>
-                  <option value="">Select an option</option>
-                  <option value="yes">Yes</option>
-                  <option value="no">No</option>
-                </select>
-              </div>
-              <div class="question-block">
-                <label for="css-textarea">Do you have any questions:</label>
-              </div>
-              <div class="answer">
-                <textarea id="css-textarea" name="css-questions" rows="5" cols="24" placeholder="Who is flexbox..."></textarea>
-              </div>
-            </div>
-          </section>
-          <button type="submit">Send</button>
-        </form>
-      </main>
-      <footer>
-        <address>
-          <a href="https://freecodecamp.org">freeCodeCamp</a><br />
-          San Francisco<br />
-          California<br />
-          USA
-        </address>
-      </footer>
+      <a href="./atribute-page.html" target="_blank" class="project project-tile">
+        <img class="project-image" src="./nathaniel.jpg" alt="project" width="70px%" height="65px">
         <p class="project-title"><span class="code"&lt;></span>
-          Magazine
+          Tribute Page
           <span class="code"/&gt;></span>
         </p>
-      
-        <div class="left-mountain"></div>
-        <div class="back-mountain"></div>
-        <div class="sun"></div>
-        <div class="penguin">
-          <div class="penguin-head">
-            <div class="face left"></div>
-            <div class="face right"></div>
-            <div class="chin"></div>
-            <div class="eye left">
-              <div class="eye-lid"></div>
-            </div>
-            <div class="eye right">
-              <div class="eye-lid"></div>
-            </div>
-            <div class="blush left"></div>
-            <div class="blush right"></div>
-            <div class="beak top"></div>
-            <div class="beak bottom"></div>
-          </div>
-          <div class="shirt">
-            <div>💜</div>
-            <p>I CSS</p>
-          </div> 
-          <div class="penguin-body">
-            <div class="arm left"></div>
-            <div class="arm right"></div>
-            <div class="foot left"></div>
-            <div class="foot right"></div>
-          </div>
-        </div>
-    
-        <div class="ground"></div>
+      </a>
+      <a href="./survey.html" target="_blank" class="project project-tile">
+       
+        <p class="project-title"><span class="code"&lt;></span>
+        survey form
+  <span class="code"/&gt;></span></span>
+        </p>
+        </a>
+      <a href="./technical-documentation-page.html" target="_blank" class="project project-tile">
         
         <p class="project-title">
           <span class="code"&lt;></span>
-          Pengiun
+          Technical Documentation Page
           <span class="code"/&gt;></span>
         </p>
       </a>
-      <main>
-        <section class="heading">
-          <header class="hero">
-            <img
-              src="https://cdn.freecodecamp.org/platform/universal/fcc_meta_1920X1080-indigo.png"
-              alt="freecodecamp logo"
-              loading="lazy"
-              class="hero-img"
-            />
-            <h1 class="hero-title">OUR NEW CURRICULUM</h1>
-            <p class="hero-subtitle">
-              Our efforts to restructure our curriculum with a more project-based
-              focus
-            </p>
-          </header>
-          <div class="author">
-            <p class="author-name">
-              By
-              <a href="https://freecodecamp.org" target="_blank" rel="noreferrer"
-                >freeCodeCamp</a
-              >
-            </p>
-            <p class="publish-date">March 7, 2019</p>
-          </div>
-          <div class="social-icons">
-            <a href="https://www.facebook.com/freecodecamp/">
-              <i class="fab fa-facebook-f"></i>
-            </a>
-            <a href="https://twitter.com/freecodecamp/">
-              <i class="fab fa-twitter"></i>
-            </a>
-            <a href="https://instagram.com/freecodecamp">
-              <i class="fab fa-instagram"></i>
-            </a>
-            <a href="https://www.linkedin.com/school/free-code-camp/">
-              <i class="fab fa-linkedin-in"></i>
-            </a>
-            <a href="https://www.youtube.com/freecodecamp">
-              <i class="fab fa-youtube"></i>
-            </a>
-          </div>
-        </section>
-        <section class="text">
-          <p class="first-paragraph">
-            Soon the freeCodeCamp curriculum will be 100% project-driven learning. Instead of a series of coding challenges, you'll learn through building projects - step by step. Before we get into the details, let me emphasize: we are not changing the certifications. All 6 certifications will still have the same 5 required projects. We are only changing the optional coding challenges.
-          </p>
-          <p>
-            After years - years - of pondering these two problems and how to solve them, I slipped, hit my head on the sink, and when I came to I had a revelation! A vision! A picture in my head! A picture of this! This is what makes time travel possible: the flux capacitor!
-          </p>
-          <p>
-            It wasn't as dramatic as Doc's revelation in Back to the Future. It
-            just occurred to me while I was going for a run. The revelation: the entire curriculum should be a series of projects. Instead of individual coding challenges, we'll just have projects, each with their own seamless series of tests. Each test gives you just enough information to figure out how to get it to pass. (And you can view hints if that isn't enough.)
-          </p>
-          <blockquote>
-            <hr />
-            <p class="quote">
-              The entire curriculum should be a series of projects
-            </p>
-            <hr />
-          </blockquote>
-          <p>
-            No more walls of explanatory text. No more walls of tests. Just one
-            test at a time, as you build up a working project. Over the course of passing thousands of tests, you build up projects and your own understanding of coding fundamentals. There is no transition between lessons and projects, because the lessons themselves are baked into projects. And there's plenty of repetition to help you retain everything because - hey - building projects in real life has plenty of repetition.
-          </p>
-          <p>
-            The main design challenge is taking what is currently paragraphs of explanation and instructions and packing them into a single test description text. Each project will involve dozens of tests like this. People will be coding the entire time, rather than switching back and forth from "reading mode" to "coding mode".
-          </p>
-          <p>
-            Instead of a series of coding challenges, people will be in their code editor passing one test after another, quickly building up a project. People will get into a real flow state, similar to what they experience when they build the required projects at the end of each certification. They'll get that sense of forward progress right from the beginning. And freeCodeCamp will be a much smoother experience.
-          </p>
-        </section>
-        <section class="text text-with-images">
-          <article class="brief-history">
-            <h3 class="list-title">A Brief History</h3>
-            <p>Of the Curriculum</p>
-            <ul class="lists">
-              <li>
-                <h4 class="list-subtitle">V1 - 2014</h4>
-                <p>
-                  We launched freeCodeCamp with a simple list of 15 resources,
-                  including Harvard's CS50 and Stanford's Database Class.
-                </p>
-              </li>
-              <li>
-                <h4 class="list-subtitle">V2 - 2015</h4>
-                <p>We added interactive algorithm challenges.</p>
-              </li>
-              <li>
-                <h4 class="list-subtitle">V3 - 2015</h4>
-                <p>
-                  We added our own HTML+CSS challenges (before we'd been relying on
-                  General Assembly's Dash course for these).
-                </p>
-              </li>
-              <li>
-                <h4 class="list-subtitle">V4 - 2016</h4>
-                <p>
-                  We expanded the curriculum to 3 certifications, including Front
-                  End, Back End, and Data Visualization. They each had 10 required
-                  projects, but only the Front End section had its own challenges.
-                  For the other certs, we were still using external resources like
-                  Node School.
-                </p>
-              </li>
-              <li>
-                <h4 class="list-subtitle">V5 - 2017</h4>
-                <p>We added the back end and data visualization challenges.</p>
-              </li>
-              <li>
-                <h4 class="list-subtitle">V6 - 2018</h4>
-                <p>
-                  We launched 6 new certifications to replace our old ones. This was
-                  the biggest curriculum improvement to date.
-                </p>
-              </li>
-            </ul>
-          </article>
-          <aside class="image-wrapper">
-            <img
-              src="https://cdn.freecodecamp.org/testable-projects-fcc/images/random-quote-machine.png"
-              alt="image of the quote machine project"
-              loading="lazy"
-              class="image-1"
-              width="600"
-              height="400"
-            />
-            <img
-              src="https://cdn.freecodecamp.org/testable-projects-fcc/images/calc.png"
-              alt="image of a calculator project"
-              loading="lazy"
-              class="image-2"
-              width="400"
-              height="400"
-            />
-            <blockquote class="image-quote">
-              <hr />
-              <p class="quote">
-                The millions of people who are learning to code through freeCodeCamp
-                will have an even better resource to help them learn these
-                fundamentals.
-              </p>
-              <hr />
-            </blockquote>
-            <img
-              src="https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg"
-              alt="four people working on code"
-              loading="lazy"
-              class="image-3"
-              width="600"
-              height="400"
-            />
-          </aside>
+      <a href="./quiz.html" target="_blank" class="project project-tile">
         <p class="project-title">
           <span class="code"&lt;></span>
-         Magazine
+         Quiz
           <span class="code"/&gt;></span>
         </p>
       </a>
-      <main>
-        <h1 id="title">SURVEY FORM</h1>
-        <p id="description">Thank you for taking the time to help us improve the platform</p>
-        <form action="www.fantsuam.org" id="survey-form" value="submit" method="post">
-        <fieldset>
-          <legend>Participant Information</legend>
-      <label for="name" id="name-label">fullname</label><input type="text" id="name" name="fullname" placeholder="name" required>
-          <label for="email" id="email-label">email address</label><input type="email" id="email" name="email" placeholder="email address" required>
-          <label for="number" id="number-label">Age</label><input type="number" id="number" name="age" min="10" max="25" placeholder="number">
-        </fieldset>
-        <p>Which option best describes your current role?</p>
-        <fielsset>
-      <select id="dropdown" name="current role">
-      <option value="">select current role</option>
-      <option value="1">student</option>
-      <option value="2">fulltime job</option>
-      <option value="3">fulltime learner</option>
-      <option value="4">others</option>
-      <option value="3">rather not say</option>
-      </select>
-      <P> will you recommend us to your friends</p>
-      <label><input name="user-recommend" value="definitely" type="radio" class="input-radio" checked="">definitely</label>
-      <label><input name="user-recommend" value="maybe" type="radio" class="input-radio" checked="">maybe</label>
-      <label><input name="user-recommend" value="maybe not" type="radio" class="input-radio" checked="">maybe not</label>
-      </fieldset>
-      <p>what your favourite activity in fantsuam foundation first eleven</P>
-      <fieldset>
-        <select>
-          <option value="">select an option</option>
-      <option value="1">Gender Empowerment</option>
-      <option value="2">Fermine Diplamacy</option>
-      <option value="3">Female with Disablity</option>
-      <option value="4">Smallholder Women Farmer</option>
-      <option value="5">ICT and it application in Agriculture</option>
-      <option value="6">Nutritional assesment and Intervention for vunerable children and Adult</option>
-      <option value="7">Support for Girl child Education</option>
-      <option value="8">Protection against gender-base violence against children</option>
-        </select>
-        <p>what will you us improve?(check all that aply)</p> 
-        <input name="prefer" value="activities" type="checkbox" class="input-checkbox">activities
-        <input name="prefer" value="challenges" type="checkbox" class="input-checkbox">challenges
-       <input name="prefer" value="open-source-community" type="checkbox" class="input-checkbox">open-source-community
-      </fieldset>
-      <p>Any comments or suggestion</p>
-      <textarea rows="4" cols="40" placeholder="enter you comment/suggestion here"></textarea>
-      <input type="submit" value="submit" class="btn" id="submit">
-        </form>
-        </main>
+      <a href="./magazine.html" target="_blank" class="project project-tile">
         <p class="project-title">
           <span class="code"&lt;></span>
-         Survey
+          Magazine
           <span class="code"/&gt;></span>
         </p>
       </a>
