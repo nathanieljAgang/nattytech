@@ -1,3 +1,4 @@
+*,
 ::before,
 ::after {
   padding: 0;
@@ -184,3 +185,4 @@ hr {
     font-size: 1.6rem;
   } 
 }
+
