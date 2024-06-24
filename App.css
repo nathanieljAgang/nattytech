@@ -1,0 +1,50 @@
+/* styles.css */
+
+/* Add your custom styles here */
+#quote-box {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color:white;
+  margin: 0 auto;
+  max-width: 400px;
+  color: #777;
+}
+
+#text {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+#author {
+  font-size: 14px;
+  color: #777;
+}
+
+#new-quote {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  padding: 8px 16px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+#new-quote:hover {
+  background-color: #0056b3;
+}
+
+#tweet-quote {
+  display: block;
+  margin-top: 10px;
+  color: #007bff;
+  text-decoration: none;
+}
+
+#tweet-quote:hover {
+  text-decoration: underline;
+}
